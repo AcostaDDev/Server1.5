@@ -73,7 +73,7 @@
             display: grid;
             place-content: center;
             height: 100vh;
-            padding: 36px;
+            padding: 36px 36px 100px 36px;
             grid-template-columns: 1fr;
         }
 
@@ -116,11 +116,27 @@
         }
 
         #input{
-            border-radius: 9999px;
+            border-radius: 999px;
             border: 1px solid #eee;
             flex: 1;
             margin: 4px;
             padding: 0 8px;
+        }
+
+        #input:focus{
+            outline: 0;
+        }
+
+        #form > button{
+            background-color: #09f;
+            color: #fff;
+            border: 0;
+            margin: 4px;
+            border-radius: 4px;
+        }
+
+        #form > button:hover{
+            background: #0cf;   
         }
 
     </style>
